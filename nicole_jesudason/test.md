@@ -41,7 +41,7 @@ app.delete('/', function (req, res) {
 Describe the differences between Express and Rails as backend frameworks.
 
 ```text
-Your answer...
+Express and Rails are both web application frameworks for JS and Ruby respectively. Rails is an opinionated framework and so has a lot of conventions but can also do a lot of the work for you. This makes it good for learners or to develop basic CRUD apps quickly. It also better facilitates switching from one developer to another (because there's less room for individuality in code). Express is unopinionated, and so gives the developer greater control but also requires more work and can be more difficult to pass between different developers. Express also has faster performance, and only requires one language (JS).
 ```
 
 ### Question 4
