@@ -77,11 +77,33 @@ The `BankAccount` class has a `transactionHistory` property which keeps track of
 * Make sure to indicate whether the transaction increased or decreased the amount of money in the bank.
 
 ```text
-Your answer...
+class BankAccount
+	attr_reader :type, :balance, :transactionHistory
+	def initialize(type, balance)
+		@type = type
+		@balance = balance
+		@transactionHistory = []
+	end
+
+	def withdraw(amountWithdrawn)
+		@balance -= amountWithdrawn
+		@transactionHistory.push ("withdraw: -$#{amountWithdrawn}, balance: $#{@balance}")
+	end
+
+	def deposit(amountDeposited)
+		@balance += amountDeposited
+		@transactionHistory.push ("deposit: $#{amountDeposited}, balance: $#{@balance}")
+	end
+
+	def showBalance
+		puts "$#{@balance}"
+	end
+
+end
 ```
 
 Create an instance of the BankAccount class
 
 ```text
-Your answer...
+b = BankAccount.new('check', 70)
 ```
