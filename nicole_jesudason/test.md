@@ -5,7 +5,7 @@
 What is `module.exports` and why do we use it?
 
 ```text
-Your answer...
+Module exports is an object that is used to import code from one file to another and is called with the require function.
 ```
 
 ### Question 2
