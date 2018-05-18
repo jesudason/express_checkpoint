@@ -55,7 +55,9 @@ app.use(bodyParser.urlencoded({extended: true}))
 ```
 
 ```text
-Your answer...
+var bodyParser uses the function require to call the module body-parser. The module body-parser allows you to access the req body.
+app.use(bodyParser.json()) tells the system that the app will be using Json
+app.use(bodyParser.urlencoded({extended: true})) tells the system that you will be working with nested objects (as opposed to extended: false)
 ```
 
 ### Question 5
